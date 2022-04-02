@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="498.0" prefWidth="655.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <children>
+      <FlowPane layoutX="212.0" layoutY="199.0" prefHeight="226.0" prefWidth="230.0">
+         <children>
+            <Button fx:id="button1" mnemonicParsing="false" onAction="#b1" prefHeight="75.0" prefWidth="75.0">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font></Button>
+            <Button fx:id="button2" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#b2" prefHeight="75.0" prefWidth="75.0">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font></Button>
+            <Button fx:id="button3" layoutX="85.0" layoutY="10.0" mnemonicParsing="false" onAction="#b3" prefHeight="75.0" prefWidth="75.0">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font></Button>
+            <Button fx:id="button4" layoutX="160.0" layoutY="10.0" mnemonicParsing="false" onAction="#b4" prefHeight="75.0" prefWidth="75.0">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font></Button>
+            <Button fx:id="button5" layoutX="10.0" layoutY="85.0" mnemonicParsing="false" onAction="#b5" prefHeight="75.0" prefWidth="75.0">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font></Button>
+            <Button fx:id="button6" layoutX="85.0" layoutY="85.0" mnemonicParsing="false" onAction="#b6" prefHeight="75.0" prefWidth="75.0">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font></Button>
+            <Button fx:id="button7" layoutX="160.0" layoutY="85.0" mnemonicParsing="false" onAction="#b7" prefHeight="75.0" prefWidth="75.0">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font></Button>
+            <Button fx:id="button8" layoutX="10.0" layoutY="160.0" mnemonicParsing="false" onAction="#b8" prefHeight="75.0" prefWidth="75.0">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font></Button>
+            <Button fx:id="button9" layoutX="85.0" layoutY="160.0" mnemonicParsing="false" onAction="#b9" prefHeight="75.0" prefWidth="75.0">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font></Button>
+         </children>
+      </FlowPane>
+      <Text fx:id="winnerText" layoutX="181.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tic-Tac-Toe" textAlignment="CENTER" wrappingWidth="237.9443359375">
+         <font>
+            <Font name="System Bold Italic" size="39.0" />
+         </font>
+      </Text>
+      <Button layoutX="276.0" layoutY="432.0" mnemonicParsing="false" onAction="#restartGame" prefHeight="52.0" prefWidth="102.0" text="Restart">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Button>
+      <ComboBox fx:id="scenarios" layoutX="465.0" layoutY="144.0" prefWidth="150.0" promptText="Select  Scenario" />
+      <RadioButton fx:id="o" layoutX="216.0" layoutY="139.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="63.0" text="O">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="xORo" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton layoutX="138.0" layoutY="139.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="63.0" selected="true" text="X" toggleGroup="$xORo" fx:id="x">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </RadioButton>
+      <Label fx:id="lbl" layoutX="14.0" layoutY="139.0" prefHeight="35.0" prefWidth="124.0" text="Play With:">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="st" layoutX="261.0" layoutY="75.0" mnemonicParsing="false" onAction="#start" text="Start Game">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
